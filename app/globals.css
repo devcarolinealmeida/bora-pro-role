@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.font-asap-condens-500 {
+  font-family: var(--font-asap-condens-500);
+}
+.font-asap-condens-700 {
+  font-family: var(--font-asap-condens-700);
+}
+.font-asap-condens-900,
+h1,h2,h3,h4 {
+  font-family: var(--font-asap-condens-900);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--font-asap);
+}
