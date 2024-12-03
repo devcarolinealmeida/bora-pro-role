@@ -1,8 +1,7 @@
 import { fileURLToPath } from "node:url";
 import createJiti from "jiti";
-import createJITI from "jiti";
 
-const jiti = createJITI(fileURLToPath(import.meta.url));
+const jiti = createJiti(fileURLToPath(import.meta.url));
 
 
  
