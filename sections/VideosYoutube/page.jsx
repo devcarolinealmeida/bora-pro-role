@@ -2,12 +2,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import PlayYoutube from "@/assets/youtube-play-button.svg";
 
 import { env } from "../../env";
 
 const BASE_URL = env.NEXT_PUBLIC_DATABASE_URL;
-const channelID = env.NEXT_PUBLIC_CHANNEL_ID;
+/* const channelID = env.NEXT_PUBLIC_CHANNEL_ID; */
 const apiKey = env.NEXT_PUBLIC_API_KEY;
 const playlistID = env.NEXT_PUBLIC_PLAYLIST_ID;
 
