@@ -18,3 +18,8 @@ h1,h2,h3,h4 {
 p {
   font-family: var(--font-asap);
 }
+.card-slider {
+  @apply border-white;
+  border: 4px white solid;
+  border-radius: 13.86px;
+}
