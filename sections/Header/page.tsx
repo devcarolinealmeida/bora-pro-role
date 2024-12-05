@@ -1,9 +1,9 @@
 "use client";
-import StarIcon from '../../assets/Icon-star.svg';
 import InstagramIcon from "../../assets/icon_instagram.svg";
 import YoutubeIcon from "../../assets/icon_youtube.svg";
 import { useState } from "react";
 import Link from "next/link";
+import { SliderText } from "../../components/SliderText";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -21,9 +21,8 @@ const Header = () => {
 
   return (
     <header className="sticky top-0">
-      <div className="_nav-bar flex items-center gap-1 py-1 bg-black text-white">
-        <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
-        <p className="font-asap-condens-700">Subscribe to our channel</p>
+      <div className="_nav-bar py-1 bg-black text-white">
+       <SliderText/>
       </div>
       <nav>
         <div className="_nav-dsk hidden md:flex justify-between container max-w-7xl mx-auto">
