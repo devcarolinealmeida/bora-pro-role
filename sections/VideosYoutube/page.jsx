@@ -37,7 +37,7 @@ const VideosYoutube = () => {
     <section className="bg-black py-12">
       <div className="container max-w-7xl">
         <div className="pb-12">
-          <h4 className="text-4xl text-white mb-4">Scopri i nostri ultimi contenuti</h4>
+          <h4 className=" text-white mb-4">Scopri i nostri ultimi contenuti</h4>
           <p className="text-white">
             Siamo Cami e João e lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et

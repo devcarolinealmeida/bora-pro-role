@@ -15,8 +15,16 @@ h1,h2,h3,h4 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: clamp(3.375rem, 2.9608rem + 1.6993vw, 5rem);
+}
+h4 {
+  font-size: clamp(2.5rem, 2.1814rem + 1.3072vw, 3.75rem);
+}
+
 p {
   font-family: var(--font-asap);
+  font-size: clamp(1rem, 0.9363rem + 0.2614vw, 1.25rem);
 }
 .card-slider {
   @apply border-white;

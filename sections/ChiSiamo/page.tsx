@@ -14,7 +14,7 @@ export const ChiSiamo = () => {
     <section className="bg-black py-16" id="chi_siamo">
       <div className="container max-w-7xl">
         <div className="pb-12">
-          <h4 className="text-white mb-4 text-4xl">Chi Siamo</h4>
+          <h4 className="text-white mb-4">Chi Siamo</h4>
           <p className="text-white">
             Siamo Cami e João e lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et
