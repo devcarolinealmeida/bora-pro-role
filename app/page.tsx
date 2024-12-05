@@ -1,4 +1,5 @@
 import { ChiSiamo } from "../sections/ChiSiamo/page";
+import { Footer } from "../sections/Footer/page";
 import Header from "../sections/Header/page";
 import { Hero } from "../sections/Hero/page";
 import { PercheSeguirci } from "../sections/PercheSeguirci/page";
@@ -13,6 +14,7 @@ export default function Home() {
       <ChiSiamo/>
       <PercheSeguirci/>
       {/* <VideosYoutube/> */}
+      <Footer/>
     </>
   );
 }
