@@ -13,7 +13,7 @@ export default function Home() {
       <Hero/>
       <ChiSiamo/>
       <PercheSeguirci/>
-      {/* <VideosYoutube/> */}
+      <VideosYoutube/>
       <Footer/>
     </>
   );
