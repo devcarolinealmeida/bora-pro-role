@@ -23,9 +23,16 @@ h4 {
   font-size: clamp(2.5rem, 2.1814rem + 1.3072vw, 3.75rem);
 }
 
-p {
+p, h5 {
   font-family: var(--font-asap);
+}
+p {
   font-size: clamp(1rem, 0.9363rem + 0.2614vw, 1.25rem);
+}
+
+section {
+  @apply py-24;
+  min-height: 100vh;
 }
 .card-slider {
   @apply border-white;

@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import imgChannel from '../../assets/bora_pro_role-joao-e-cami-3.jpg'
 
 import { env } from "../../env";
 
@@ -34,9 +35,9 @@ const VideosYoutube = () => {
   }, []);
 
   return (
-    <section className="bg-black py-12">
+    <section className="bg-black py-12-">
       <div className="container max-w-7xl">
-        <div className="pb-12">
+        <div className="pb-24">
           <h4 className=" text-white mb-4">Scopri i nostri ultimi contenuti</h4>
           <p className="text-white">
             Siamo Cami e João e lorem ipsum dolor sit amet, consectetur
@@ -67,7 +68,10 @@ const VideosYoutube = () => {
                     />
                     <div className="w-full h-full absolute top-0 right-0 bg-gradient-to-r from-black to-transparent opacity-50 rounded-[10px]"></div>
                   </div>
-                  <h4 className="font-asap-condens-500 text-white capitalize line-clamp-2 mt-2">{video.snippet.title}</h4>
+                  <div className="flex gap-4 mt-3 px-2">
+                    <Image className="w-8 h-8 rounded-full object-cover" src={imgChannel}/>
+                    <h5 className="text-sm text-white capitalize line-clamp-2 leading-4">{video.snippet.title}</h5>
+                  </div>
                 </Link>
               </li>
             ))}
