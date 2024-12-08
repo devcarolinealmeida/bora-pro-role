@@ -1,9 +1,9 @@
 "use client";
-import Cami_Joao from "../assets/bora_pro_role-joao-e-cami.jpg";
-import Cami_Joao_2 from "../assets/bora_pro_role-joao-e-cami-2.jpg";
-import Cami_Joao_3 from "../assets/bora_pro_role-joao-e-cami-3.jpg";
-import Cami_Joao_4 from "../assets/bora_pro_role-joao-e-cami-4.jpg";
-import Cami_Joao_5 from "../assets/bora_pro_role-joao-e-cami-5.jpg";
+import Cami_Joao from "/bora_pro_role-joao-e-cami.jpg";
+import Cami_Joao_2 from "/bora_pro_role-joao-e-cami-2.jpg";
+import Cami_Joao_3 from "/bora_pro_role-joao-e-cami-3.jpg";
+import Cami_Joao_4 from "/bora_pro_role-joao-e-cami-4.jpg";
+import Cami_Joao_5 from "/bora_pro_role-joao-e-cami-5.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 

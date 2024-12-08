@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import imgChannel from '../../assets/bora_pro_role-joao-e-cami-3.jpg'
+import imgChannel from './../../public/bora_pro_role-joao-e-cami-3.jpg'
 
 import { env } from "../../env";
 

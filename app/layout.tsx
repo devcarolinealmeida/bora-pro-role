@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt" className="relative">
-      <body className={twMerge(asap.variable, asap_conds_900.variable, asap_conds_700.variable, asap_conds_500.variable, "antialiased bg-[#B1ABF4]")}>
+      <body className={twMerge(asap.variable, asap_conds_900.variable, asap_conds_700.variable, asap_conds_500.variable, "antialiased bg-black")}>
         {children}
       </body>
     </html>
