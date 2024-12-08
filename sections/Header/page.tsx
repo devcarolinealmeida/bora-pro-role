@@ -20,21 +20,23 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 z-50">
       <div className="_nav-bar py-1 bg-black text-white">
        <SliderText/>
       </div>
       <nav>
-        <div className="_nav-dsk hidden md:flex justify-between container max-w-7xl mx-auto">
-          <h1 className="fs-[2.25rem] font-asap-condens-900 py-4">Bora pro rolê</h1>
-          <div className="flex gap-4 font-asap-condens-700 fs-[1.5rem]">
-            {navItems.map((navItem) => {
-              return (
-                <Link className="p-4" key={navItem.title} href={navItem.url}>
-                  {navItem.title}
-                </Link>
-              );
-            })}
+        <div className="_nav-dsk bg-[#B1ABF4] hidden md:block">
+          <div className="flex justify-between items-center container max-w-7xl">
+            <h1 className="text-[1.5rem] font-asap-condens-900">Bora pro rolê</h1>
+            <div className="flex font-asap-condens-700 fs-[1.5rem]">
+              {navItems.map((navItem) => {
+                return (
+                  <Link className="px-4 py-6" key={navItem.title} href={navItem.url}>
+                    {navItem.title}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         </div>
         <div className="_nav-mob flex md:hidden justify-between items-center p-4">
