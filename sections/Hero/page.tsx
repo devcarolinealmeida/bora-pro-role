@@ -3,7 +3,7 @@ import { SliderCardHero } from "../../components/SliderCardHero";
 
 export const Hero = () => {
   return (
-      <section className="_hero flex flex-col bg-[#B1ABF4]">
+      <section className="_hero flex flex-col bg-[#B1ABF4]" id="top">
         <div className="container max-w-7xl">
           <div className="">
             <h2 className="max-w-[24ch] mb-4">

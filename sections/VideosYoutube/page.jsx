@@ -35,7 +35,7 @@ const VideosYoutube = () => {
   }, []);
 
   return (
-    <section className="bg-black">
+    <section className="bg-black" id="contenuti">
       <div className="container max-w-7xl">
         <div className="pb-24">
           <h4 className=" text-white mb-4">Scopri i nostri ultimi contenuti</h4>

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
 
 .font-asap-condens-500 {
   font-family: var(--font-asap-condens-500);

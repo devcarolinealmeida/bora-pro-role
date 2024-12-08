@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export  const Footer = () => {
     return (
-        <footer className="bg-[#F5F2E8] pt-16 pb-8 rounded-t-[20px]">
+        <footer className="bg-[#F5F2E8] pt-16 pb-8 rounded-t-[20px]" id="contatti">
             <div className="container max-w-7xl">
                 <div className="flex flex-col gap-8 items-center pb-16 border-b border-black">
                     <h4 className="text-center max-w-[24ch]">Vuoi scriverci o vuoi un progetto con noi?</h4>
