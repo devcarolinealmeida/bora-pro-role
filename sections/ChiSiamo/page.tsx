@@ -11,7 +11,7 @@ import JoaoSvg from "../../assets/joao.svg";
 
 export const ChiSiamo = () => {
   return (
-    <section className="bg-black py-16" id="chi_siamo">
+    <section className="bg-black" id="chi_siamo">
       <div className="container max-w-7xl">
         <div className="pb-12">
           <h4 className="text-white mb-4">Chi Siamo</h4>

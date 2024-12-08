@@ -1,6 +1,6 @@
 export const PercheSeguirci = () => {
   return (
-    <section className="bg-[#FCE688] py-16" id="perche-seguirci">
+    <section className="bg-[#FCE688]" id="perche-seguirci">
       <div className="container max-w-7xl flex flex-col md:flex-row">
         <div className="">
           <h4 className="mb-4">Perchè Seguirci</h4>
