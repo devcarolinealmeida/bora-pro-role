@@ -71,6 +71,7 @@ const VideosYoutube = () => {
                     </div>
                     <div className="flex gap-4 mt-3 px-2">
                       <Image
+                      alt=""
                         className="w-8 h-8 rounded-full object-cover"
                         src={imgChannel}
                       />
