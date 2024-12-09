@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Slider from "../../components/Slider";
 import { SliderCardHero } from "../../components/SliderCardHero";
 
@@ -12,11 +13,11 @@ export const Hero = () => {
             <p className="text-xl lg:text-2xl mb-12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <a
+            <Link
               className="btn"
               href="#chi-siamo">
               Descubra mais
-            </a>
+            </Link>
           </div>
         </div>
         <Slider/>

@@ -46,3 +46,8 @@ section {
 .btn {
   @apply bg-black text-white px-6 py-2 rounded-3xl font-asap-condens-500 uppercase text-base;
 }
+
+.btn.isdark {
+  @apply text-black;
+  background-color: #F5F2E8;
+}
