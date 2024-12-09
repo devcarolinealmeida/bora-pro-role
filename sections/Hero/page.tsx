@@ -15,7 +15,7 @@ export const Hero = () => {
             </p>
             <Link
               className="btn"
-              href="#chi-siamo">
+              href="#chi_siamo">
               Descubra mais
             </Link>
           </div>

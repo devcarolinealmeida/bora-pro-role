@@ -27,7 +27,7 @@ const Header = () => {
       <nav>
         <div className="_nav-dsk bg-[#B1ABF4] hidden md:block">
           <div className="flex justify-between items-center container max-w-7xl">
-            <Link href='#top'>
+            <Link href="#top">
               <h1 className="text-[1.5rem] font-asap-condens-900">
                 Bora pro rolê
               </h1>
@@ -47,9 +47,11 @@ const Header = () => {
           </div>
         </div>
         <div className="_nav-mob bg-[#B1ABF4] flex md:hidden justify-between items-center px-4 py-6">
-          <h1 className="text-[1.25rem] font-asap-condens-900">
-            Bora pro rolê
-          </h1>
+          <Link href="#top">
+            <h1 className="text-[1.25rem] font-asap-condens-900">
+              Bora pro rolê
+            </h1>
+          </Link>
           <button
             onClick={handleClick}
             className={`w-10 h-10 fixed top-12 right-4 flex flex-col justify-center items-center z-20 rounded-full p-[0.65rem transition-colors duration-500 ease-in] ${
