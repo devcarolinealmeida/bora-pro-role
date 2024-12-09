@@ -11,7 +11,7 @@ export  const Footer = () => {
                     </Link>
                 </div>
                 <div className="flex flex-col md:flex-row gap-2 items-center md:justify-between pt-6">
-                    <Link className="text-[14px]" href='#top'>@2024 BORAPROROLÊ</Link>
+                    <Link className="text-[14px]"  href="https://www.youtube.com/@BoraproRol%C3%AA_cj">@2024 BORAPROROLÊ</Link>
                     <Link className="text-[14px]" href="href">Developed by</Link>
                 </div>
             </div>

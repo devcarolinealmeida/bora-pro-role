@@ -86,14 +86,27 @@ const Header = () => {
           <div className="flex flex-col justify-center h-full gap-6 text-white font-asap-condens-700 fs-[2.5rem] uppercase p-8">
             {navItems.map((navItem) => {
               return (
-                <Link key={navItem.title} href={navItem.url}>
+                <Link
+                  onClick={handleClick}
+                  key={navItem.title}
+                  href={navItem.url}>
                   {navItem.title}
                 </Link>
               );
             })}
             <div className="flex items-center gap-4">
-              <InstagramIcon fill className="w-6 h-12" />
-              <YoutubeIcon className="w-6 h-10" />
+              <Link
+                onClick={handleClick}
+                href="https://www.instagram.com/boraprorolecj/"
+                target="_blank">
+                <InstagramIcon fill className="w-6 h-12" />
+              </Link>
+              <Link
+                onClick={handleClick}
+                href="https://www.youtube.com/@BoraproRol%C3%AA_cj"
+                target="_blank">
+                <YoutubeIcon className="w-6 h-10" />
+              </Link>
             </div>
           </div>
         </div>
