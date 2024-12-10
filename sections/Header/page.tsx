@@ -54,29 +54,25 @@ const Header = () => {
           </Link>
           <button
             onClick={handleClick}
-            className={`w-10 h-10 fixed top-12 right-4 flex flex-col justify-center items-center z-20 rounded-full p-[0.65rem transition-colors duration-500 ease-in] ${
+            className={`w-10 h-10 fixed top-12 right-4 flex flex-col justify-center items-center z-20 rounded-full transition-colors duration-500 ease-in ${
               open ? "bg-white" : "bg-black"
             }`}>
-            <div className="flex flex-col items-end p-2">
+            <div className="flex flex-col items-end">
+            <span
+              className={` block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm ${
+                      open ? "rotate-45 translate-y-1 bg-black" : " bg-white -translate-y-0.5"
+                    }`}></span>
               <span
-                className={`block transition-all duration-300 ease-out
-                        h-[1.5px] w-[20px] rounded-md ${
-                          open
-                            ? "rotate-45 translate-y-1 bg-black"
-                            : "bg-white -translate-y-0.5"
-                        }`}></span>
+              className={` block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm my-0.5 ${
+                      open ? "opacity-0" : "bg-white opacity-100"
+                    }`}></span>
               <span
-                className={`block transition-all duration-300 ease-out
-                        h-[1.5px] w-[20px] rounded-md my-0.5 ${
-                          open ? "opacity-0" : "bg-white opacity-100"
-                        }`}></span>
-              <span
-                className={`block transition-all duration-300 ease-out
-                        h-[1.5px] rounded-md ${
-                          open
-                            ? "-rotate-45 -translate-y-1 w-[20px] bg-black"
-                            : "bg-white translate-y-0.5 w-[16px]"
-                        }`}></span>
+              className={` block transition-all duration-300 ease-out 
+                    h-0.5 w-4 rounded-sm ${
+                      open ? "-rotate-45 -translate-y-1 bg-black w-6" : " bg-white translate-y-0.5"
+                    }`}></span>
             </div>
           </button>
         </div>
