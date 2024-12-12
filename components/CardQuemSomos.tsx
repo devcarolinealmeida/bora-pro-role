@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 import CamiSvg from "@/assets/camila.svg";
 
-const CardChiSiamo = React.forwardRef<
+const CardQuemSomos = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
@@ -16,7 +16,7 @@ const CardChiSiamo = React.forwardRef<
     {...props}
   />
 ))
-CardChiSiamo.displayName = "CardChiSiamo"
+CardQuemSomos.displayName = "CardQuemSomos"
 
 const CardTopTitle = React.forwardRef<
   HTMLDivElement,
@@ -77,7 +77,7 @@ const CardImg = React.forwardRef<
 ))
 CardImg.displayName = "CardImg"
 
-export { CardChiSiamo, CardTopTitle, CardTitle, CardDescription, CardContent, CardImg }
+export { CardQuemSomos, CardTopTitle, CardTitle, CardDescription, CardContent, CardImg }
 
 
 

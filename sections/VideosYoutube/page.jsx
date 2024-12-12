@@ -35,16 +35,13 @@ const VideosYoutube = () => {
   }, []);
 
   return (
-    <section className="bg-black" id="contenuti">
+    <section className="bg-black" id="videos">
       <div className="container max-w-7xl">
         <div className="pb-24">
-          <h4 className=" text-white mb-4">Scopri i nostri ultimi contenuti</h4>
+          <h4 className=" text-white mb-4">Se inscreva no Canal!</h4>
           <p className="text-white">
-            Siamo Cami e João e lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            Bateu a curiosidade? Dá uma olhadinha nos nossos vídeos, e não
+            esquece de se inscrever no canal.
           </p>
         </div>
         {loading ? (
@@ -71,7 +68,7 @@ const VideosYoutube = () => {
                     </div>
                     <div className="flex gap-4 mt-3 px-2">
                       <Image
-                      alt=""
+                        alt=""
                         className="w-8 h-8 rounded-full object-cover"
                         src={imgChannel}
                       />
@@ -86,7 +83,8 @@ const VideosYoutube = () => {
             <div className="flex justify-center mt-20">
               <Link
                 className="btn isdark"
-                href="https://www.youtube.com/@BoraproRol%C3%AA_cj" target="_blank">
+                href="https://www.youtube.com/@BoraproRol%C3%AA_cj"
+                target="_blank">
                 Descubra nosso canal
               </Link>
             </div>

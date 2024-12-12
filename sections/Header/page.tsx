@@ -13,10 +13,10 @@ const Header = () => {
   };
 
   const navItems = [
-    { url: "#chi_siamo", title: "Chi siamo" },
-    { url: "#perche-seguirci", title: "Perché seguirci" },
-    { url: "#contenuti", title: "Contenuti" },
-    { url: "#contatti", title: "Contatti" },
+    { url: "#quem_somos", title: "Quem Somos" },
+    { url: "#porque_seguir", title: "Porque nos seguir" },
+    { url: "#videos", title: "Vídeos" },
+    { url: "#contato", title: "Contato" },
   ];
 
   return (
