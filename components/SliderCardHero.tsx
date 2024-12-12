@@ -1,99 +1,45 @@
-"use client";
-import Cami_Joao from "/bora_pro_role-joao-e-cami.jpg";
-import Cami_Joao_2 from "/bora_pro_role-joao-e-cami-2.jpg";
-import Cami_Joao_3 from "/bora_pro_role-joao-e-cami-3.jpg";
-import Cami_Joao_4 from "/bora_pro_role-joao-e-cami-4.jpg";
-import Cami_Joao_5 from "/bora_pro_role-joao-e-cami-5.jpg";
-import Image from "next/image";
-import { motion } from "framer-motion";
+'use client';
+import { motion, animate, useMotionValue } from "framer-motion";
+import CardSlider from "./CardSlider";
+import useMeasure from 'react-use-measure';
+import { useEffect } from "react";
 
-export const SliderCardHero = () => {
-  return (
-    <div className="pt-4 pb-12">
-      <div className="flex overflow-hidden ">
-        <motion.div
-          className="flex gap-4 flex-none pr-4"
-          animate={{
-            translateX: "-50%",
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "linear",
-            repeatType: "loop",
-          }}>
-          <Image
-            src={Cami_Joao}
-            className="card-slider"
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
-          <Image
-            className="card-slider"
-            src={Cami_Joao_5}
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
-          <Image
-            className="card-slider"
-            src={Cami_Joao_3}
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
-          <Image
-            className="card-slider"
-            src={Cami_Joao_2}
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
-          <Image
-            className="card-slider"
-            src={Cami_Joao_4}
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
-          <Image
-            src={Cami_Joao}
-            className="card-slider"
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
-          <Image
-            className="card-slider"
-            src={Cami_Joao_5}
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
-          <Image
-            className="card-slider"
-            src={Cami_Joao_3}
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
-          <Image
-            className="card-slider"
-            src={Cami_Joao_2}
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
-          <Image
-            className="card-slider"
-            src={Cami_Joao_4}
-            alt="Cami e Joao"
-            width={238}
-            height={209}
-          />
+export default function SliderCardHero() {
+  const images = [
+    "/bora_pro_role-joao-e-cami.jpg",
+    "/bora_pro_role-joao-e-cami-2.jpg",
+    "/bora_pro_role-joao-e-cami-3.jpg",
+    "/bora_pro_role-joao-e-cami-4.jpg",
+    "/bora_pro_role-joao-e-cami-5.jpg",
+  ];
+
+  let [ref, { width }] = useMeasure();
+
+  const xTranslation = useMotionValue(0);
+
+  useEffect(() => {
+    let controls;
+    let finalPosition = -width / 2 - 8;
+
+    controls = animate(xTranslation, [0, finalPosition], {
+        ease: 'linear',
+        duration: 25,
+        repeat: Infinity,
+        repeatType: 'loop',
+        repeatDelay: 0,
+    });
+    return controls.stop;
+  }, [xTranslation, width]);
+
+   return (
+    <div className="relative top-16 py-6 overflow-x-clip">
+        <motion.div style={{x: xTranslation}} className="absolute left-0 flex gap-4" ref={ref}>
+           {[...images, ...images].map((item, idx) => (
+            <CardSlider image={item} key={idx}/>
+           ))}
         </motion.div>
-      </div>
     </div>
-  );
-};
+   )
+}
+
+

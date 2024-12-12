@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Slider from "../../components/Slider";
-import { SliderCardHero } from "../../components/SliderCardHero";
+import SliderCardHero from "../../components/SliderCardHero";
 
 export const Hero = () => {
   return (
@@ -16,7 +15,7 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-      <Slider />
+      <SliderCardHero />
     </section>
   );
 };
