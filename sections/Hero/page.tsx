@@ -50,7 +50,7 @@ export const Hero = () => {
           <p className="text-xl lg:text-2xl text-center max-w-[24ch] md:max-w-[42ch] mb-8">
             Dois brasileiros aprendendo a viver na Itália
           </p>
-          <Link className="btn-pulse" href="#chi_siamo" role="link" aria-label="Clique e descubra mais">
+          <Link className="btn-pulse" href="#quem_somos" role="link" aria-label="Clique e descubra mais">
             <span>Descubra mais</span>
           </Link>
         </div>
