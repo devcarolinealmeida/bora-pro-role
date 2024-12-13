@@ -44,7 +44,7 @@ export const Hero = () => {
            
           }}
           
-          className="_tag-hello absolute top-[25%] md:top-[50%] right-0">
+          className="_tag-hello absolute top-[50%] right-0">
             <TagHello className="w-[7.5rem] h-[6.5rem]"/>
           </motion.div>
           <p className="text-xl lg:text-2xl md:text-center max-w-[24ch] md:max-w-[42ch] mb-8">
