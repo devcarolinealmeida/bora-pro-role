@@ -24,7 +24,7 @@ h2 {
 }
 
 h4 {
-  font-size: clamp(4.0625rem, 2.2823rem + 7.3034vw, 8.125rem);
+  font-size: clamp(2.5rem, 2.1814rem + 1.3072vw, 3.75rem);
 }
 
 p, h5 {
