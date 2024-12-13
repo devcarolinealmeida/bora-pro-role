@@ -20,7 +20,7 @@ h1,h2,h3,h4 {
 }
 
 h2 {
-  font-size: clamp(4.0625rem, 2.0084rem + 8.427vw, 8.75rem);
+  font-size: clamp(3.125rem, 0.934rem + 8.9888vw, 8.125rem);
 }
 
 h4 {

@@ -6,10 +6,24 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="_hero pt-4 md:pt-12 pb-24 flex flex-col bg-[#B1ABF4]" id="top">
+    <section className="_hero pt-4 md:pt-12 pb-24 flex flex-col bg-[#B1ABF4] overflow-x-clip" id="top">
       <div className="container max-w-7xl">
         <div className="flex flex-col items-center relative">
-          <h2 className="text-center max-w-[12ch] md:max-w-[24ch] mb-8">Vida, Viagens, Vlog</h2>
+          <motion.h2 
+          initial={{
+            translateY: '100%',
+            opacity: 0
+          }}
+          animate={{
+            translateY: '0',
+            opacity: 1,
+          }}
+          transition={{
+            type: "spring",
+            visualDuration: 0.5,
+            bounce: .75
+          }}
+          className="text-center md:max-w-[24ch] mb-8">Vida, Viagens, Vlog</motion.h2>
           <motion.div
           initial={{
             transform: 'rotateZ(-35deg)',
@@ -27,6 +41,7 @@ export const Hero = () => {
             repeat: Infinity,
             duration: 1,
             repeatType: 'reverse',
+           
           }}
           
           className="_tag-hello absolute top-[25%] md:top-[50%] right-0">

@@ -32,7 +32,7 @@ const Header = () => {
                 Bora pro rolê
               </h1>
             </Link>
-            <div className="flex font-asap-condens-700 fs-[1.5rem]">
+            <div className="flex font-asap-condens-700 fs-[1.75rem] uppercase">
               {navItems.map((navItem) => {
                 return (
                   <Link
