@@ -82,10 +82,11 @@ const VideosYoutube = () => {
             </ul>
             <div className="flex justify-center mt-20">
               <Link
-                className="btn isdark"
+                role="link" aria-label="Descubra nosso canal"
+                className="btn-pulse"
                 href="https://www.youtube.com/@BoraproRol%C3%AA_cj"
                 target="_blank">
-                Descubra nosso canal
+                <span>Descubra nosso canal</span>
               </Link>
             </div>
           </div>

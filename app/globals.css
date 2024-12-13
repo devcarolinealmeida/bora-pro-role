@@ -20,7 +20,7 @@ h1,h2,h3,h4 {
 }
 
 h2 {
-  font-size: clamp(3.375rem, 2.9608rem + 1.6993vw, 5rem);
+  font-size: clamp(5.25rem, 3.7163rem + 6.2921vw, 8.75rem);
 }
 h4 {
   font-size: clamp(2.5rem, 2.1814rem + 1.3072vw, 3.75rem);
@@ -43,11 +43,74 @@ section {
   border-radius: 13.86px;
 }
 
-.btn {
-  @apply bg-black text-white px-6 py-2 rounded-3xl font-asap-condens-500 uppercase text-base;
+
+.btn-pulse {
+  @apply text-base px-6 py-2 rounded-3xl font-asap-condens-500 uppercase;
+  background:#000;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  color:#fff;
+  display:inline-block;
+  line-height:1.6;
+  min-width:144px;
+  position:relative;
+  text-align:center;
+  -webkit-transition:.3s ease-out;
+  transition:.3s ease-out;
+  z-index:10;
+  overflow: hidden;
 }
 
-.btn.isdark {
-  @apply text-black;
-  background-color: #F5F2E8;
+.btn-pulse::after {
+  @apply border-2 border-white rounded-3xl; 
+  height:100%;
+  width: 100%;
+  bottom:0;
+  left:0;
+  top:0;
 }
+
+.btn-pulse:before {
+  background-color:#fff;
+  height:100%;
+  width: 100%;
+  bottom:0;
+  left:0;
+  top:0;
+  -webkit-transition:.3s ease-out;
+  transition:.3s ease-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.btn-pulse span {
+  color:#fff;
+  display:block;
+  mix-blend-mode:difference;
+  position:relative;
+  -webkit-transition:.2s;
+  transition:.2s;
+  width:100%;
+  z-index:10
+}
+
+  .btn-pulse:hover {
+    outline:0;
+    outline-offset:0
+  }
+  .btn-pulse:hover:before {
+    transform: scaleX(1);
+  }
+  .btn-pulse:after,
+  .btn-pulse:before {
+    content:"";
+    position:absolute;
+  }
+  .btn-pulse:hover span {
+    mix-blend-mode:difference;
+    -webkit-transition:.2s .1s;
+    transition:.2s .1s
+  }
+
+
+
