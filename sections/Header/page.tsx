@@ -48,7 +48,7 @@ const Header = () => {
         </div>
         <div className="_nav-mob bg-[#B1ABF4] flex md:hidden justify-between items-center px-4 py-6">
           <Link href="#top">
-            <h1 className="text-[1.25rem] font-asap-condens-900">
+            <h1 className="text-[1.375rem] font-asap-condens-900">
               Bora pro rolê
             </h1>
           </Link>

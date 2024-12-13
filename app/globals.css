@@ -20,10 +20,11 @@ h1,h2,h3,h4 {
 }
 
 h2 {
-  font-size: clamp(5.25rem, 3.7163rem + 6.2921vw, 8.75rem);
+  font-size: clamp(4.0625rem, 2.0084rem + 8.427vw, 8.75rem);
 }
+
 h4 {
-  font-size: clamp(2.5rem, 2.1814rem + 1.3072vw, 3.75rem);
+  font-size: clamp(4.0625rem, 2.2823rem + 7.3034vw, 8.125rem);
 }
 
 p, h5 {
@@ -35,7 +36,13 @@ p {
 
 section {
   @apply py-24;
-  min-height: 100vh;
+  min-height: calc(100dvh  - 100px);
+}
+
+@media (min-width:640px) {
+  section {
+    min-height: 50vw;
+  }
 }
 .card-slider {
   @apply border-white;

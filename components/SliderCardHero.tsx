@@ -32,7 +32,7 @@ export default function SliderCardHero() {
   }, [xTranslation, width]);
 
    return (
-    <div className="relative top-16 py-6 overflow-x-clip">
+    <div className="relative pt-12 overflow-x-clip min-h-[200px]">
         <motion.div style={{x: xTranslation}} className="absolute left-0 flex gap-4" ref={ref}>
            {[...images, ...images].map((item, idx) => (
             <CardSlider image={item} key={idx}/>
