@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { twMerge } from "tailwind-merge";
 
-import CamiSvg from "@/assets/camila.svg";
-
 const CardQuemSomos = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>

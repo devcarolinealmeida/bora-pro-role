@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50">
       <div className="_nav-bar py-1 bg-black text-white">
-        <SliderText />
+        <SliderText title={'SE INSCREVA NO CANAL'}/>
       </div>
       <nav>
         <div className="_nav-dsk bg-[#B1ABF4] hidden md:block">

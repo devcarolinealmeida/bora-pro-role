@@ -119,5 +119,17 @@ section {
     transition:.2s .1s
   }
 
+._slider-super-cheap span {
+  font-family: var(--font-asap-condens-700);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  color: transparent;
+  font-size: 6.25rem;
+} 
+
+._slider-text span {
+  font-family: var(--font-asap-condens-700);
+  font-size: 1rem;
+}
 
 
