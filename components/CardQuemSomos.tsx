@@ -10,7 +10,7 @@ const CardQuemSomos = React.forwardRef<
   <div
     ref={ref}
     className={twMerge(
-      "bg-[#F5F2E8] flex justify-between gap-4 rounded-[10px] p-6",
+      "w-full md:max-w-[475px] bg-[#F5F2E8] flex justify-between gap-6 rounded-[10px] p-6 overflow-clip",
       className
     )}
     {...props}
@@ -24,7 +24,7 @@ const CardTopTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={twMerge("inline-block uppercase", className)}
+    className={twMerge("inline-block uppercase mb-2", className)}
     {...props}
   />
 ))
@@ -34,10 +34,10 @@ const CardTitle = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <h3
+  <h4
     ref={ref}
     className={twMerge(
-      "text-2xl leading-none tracking-tight",
+      "text-2xl leading-none tracking-tight mb-6",
       className
     )}
     {...props}
@@ -51,7 +51,7 @@ const CardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={twMerge("text-sm", className)}
+    className={twMerge("mb-6", className)}
     {...props}
   />
 ))
@@ -61,9 +61,17 @@ const CardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div ref={ref} className={twMerge("p-6 pt-0", className)} {...props} />
+  <div ref={ref} className={twMerge("pl-6", className)} {...props} />
 ))
 CardContent.displayName = "CardContent"
+
+const CardLi = React.forwardRef<
+  HTMLLIElement,
+  React.HTMLAttributes<HTMLLIElement>
+>(({ className, ...props }, ref) => (
+  <li ref={ref} className={twMerge("font-asap-condens-700", className)} {...props} />
+))
+CardLi.displayName = "CardLi"
 
 const CardImg = React.forwardRef<
   HTMLDivElement,
@@ -71,13 +79,13 @@ const CardImg = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={twMerge("w-32", className)}
+    className={twMerge("", className)}
     {...props}
   />
 ))
 CardImg.displayName = "CardImg"
 
-export { CardQuemSomos, CardTopTitle, CardTitle, CardDescription, CardContent, CardImg }
+export { CardQuemSomos, CardTopTitle, CardTitle, CardDescription, CardContent, CardLi, CardImg }
 
 
 

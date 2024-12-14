@@ -20,7 +20,7 @@ h1,h2,h3,h4 {
 }
 
 h2 {
-  font-size: clamp(3.4375rem, 1.3834rem + 8.427vw, 8.125rem);
+  font-size: clamp(3.75rem, 1.8329rem + 7.8652vw, 8.125rem);
 }
 
 h4 {
@@ -30,7 +30,7 @@ h4 {
 p, h5 {
   font-family: var(--font-asap);
 }
-p {
+p,li {
   font-size: clamp(1rem, 0.9363rem + 0.2614vw, 1.25rem);
 }
 
