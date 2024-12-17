@@ -9,21 +9,8 @@ export const Hero = () => {
     <section className="_hero pt-4 md:pt-12 pb-24 flex flex-col bg-[#B1ABF4] overflow-x-clip" id="top">
       <div className="container max-w-7xl">
         <div className="flex flex-col items-center relative">
-          <motion.h2 
-          initial={{
-            translateY: '100%',
-            opacity: 0
-          }}
-          animate={{
-            translateY: '0',
-            opacity: 1,
-          }}
-          transition={{
-            type: "spring",
-            visualDuration: 0.5,
-            bounce: .75
-          }}
-          className="text-center md:max-w-[24ch] mb-8">Vida, Viagens, Vlog</motion.h2>
+          <h2 
+          className="text-center md:max-w-[24ch] mb-8">Vida, Viagens, Vlog</h2>
           <motion.div
           initial={{
             transform: 'rotateZ(-35deg)',

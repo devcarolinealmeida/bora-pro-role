@@ -1,6 +1,6 @@
-'use client';
-import { motion, animate, useMotionValue } from "framer-motion";
+
 import CardSlider from "./CardSlider";
+import { motion, animate, useMotionValue } from "framer-motion";
 import useMeasure from 'react-use-measure';
 import { useEffect } from "react";
 
@@ -11,6 +11,9 @@ export default function SliderCardHero() {
     "/bora_pro_role-joao-e-cami-3.jpg",
     "/bora_pro_role-joao-e-cami-4.jpg",
     "/bora_pro_role-joao-e-cami-5.jpg",
+    "/bora_pro_role-joao-e-cami.jpg",
+    "/bora_pro_role-joao-e-cami-2.jpg",
+    "/bora_pro_role-joao-e-cami-3.jpg",
   ];
 
   let [ref, { width }] = useMeasure();
@@ -23,7 +26,7 @@ export default function SliderCardHero() {
 
     controls = animate(xTranslation, [0, finalPosition], {
         ease: 'linear',
-        duration: 25,
+        duration: 60,
         repeat: Infinity,
         repeatType: 'loop',
         repeatDelay: 0,

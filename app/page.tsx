@@ -1,6 +1,6 @@
-import { QuemSomos } from "../sections/QuemSomos/page";
-import { Hero } from "../sections/Hero/page";
-import { PorqueNosSeguir } from "../sections/PorqueNosSeguir/page";
+import { QuemSomos } from "../sections/QuemSomos";
+import { Hero } from "../sections/Hero";
+import { PorqueNosSeguir } from "../sections/PorqueNosSeguir";
 import VideosYoutube from "../sections/VideosYoutube/page";
 
 

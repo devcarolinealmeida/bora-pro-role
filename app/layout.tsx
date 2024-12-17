@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Asap, Asap_Condensed } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
-import { Footer } from "../sections/Footer/page";
-import Header from "../sections/Header/page";
+import { Footer } from "../sections/Footer";
+import Header from "../sections/Header";
 
 const asap = Asap({
   variable: "--font-asap",
