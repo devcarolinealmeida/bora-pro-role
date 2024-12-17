@@ -48,7 +48,7 @@ const VideosYoutube = () => {
           <p className="text-white">Loading...</p>
         ) : (
           <div>
-            <ul className="flex flex-col md:flex-row gap-6">
+            <ul className="flex flex-col md:flex-row gap-y-14 gap-x-6">
               {data.items.map((video) => (
                 <li
                   key={video.videoId}
