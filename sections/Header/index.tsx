@@ -55,7 +55,7 @@ const Header = () => {
           <button
             onClick={handleClick}
             className={`w-10 h-10 flex flex-col justify-center items-center z-20 rounded-full transition-colors duration-500 ease-in ${
-              open ? "bg-white" : "bg-black"
+              open ? "bg-white fixed top-12 right-4" : "bg-black"
             }`}>
             <div className="flex flex-col items-end">
             <span
