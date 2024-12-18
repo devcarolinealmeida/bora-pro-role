@@ -15,7 +15,10 @@ export  const Footer = () => {
                 <div className="flex flex-col md:flex-row gap-2 items-center md:justify-between pt-6">
                     <Link
                      className="text-[14px]"  href="https://www.youtube.com/@BoraproRol%C3%AA_cj">@2024 BORAPROROLÊ</Link>
-                    <Link className="text-[14px]" href="href">Developed by</Link>
+                    <div className="inline-flex gap-2 text-xs">
+                        <div>Designed by <Link className="underline hover:text-orange-500" href="https://anna-bigaran-portfolio.webflow.io/" target="_blank">Anna Bigaran</Link></div>|
+                        <div>Developed by <Link className="underline hover:text-orange-500" href="https://caroline-almeida-dev.vercel.app/" target="_blank">Caroline Almeida</Link></div>
+                    </div>
                 </div>
             </div>
         </footer>
