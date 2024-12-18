@@ -7,8 +7,8 @@ import {
   CardLi,
   CardImg,
 } from "../../components/CardQuemSomos";
-import CamiSvg from "../../assets/camila.svg";
-import JoaoSvg from "../../assets/joao.svg";
+import CamiSvg from "../../public/camila.svg";
+import JoaoSvg from "../../public/joao.svg";
 
 export const QuemSomos = () => {
   return (
