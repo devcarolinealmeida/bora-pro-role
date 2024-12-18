@@ -36,7 +36,7 @@ const Header = () => {
               {navItems.map((navItem) => {
                 return (
                   <Link
-                    className="px-4 py-6"
+                    className="px-4 py-6 hover:text-white transition-colors"
                     key={navItem.title}
                     href={navItem.url}>
                     {navItem.title}

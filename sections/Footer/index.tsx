@@ -14,10 +14,10 @@ export  const Footer = () => {
                 </div>
                 <div className="flex flex-col md:flex-row gap-2 items-center md:justify-between pt-6">
                     <Link
-                     className="text-[14px]"  href="https://www.youtube.com/@BoraproRol%C3%AA_cj">@2024 BORAPROROLÊ</Link>
+                     className="text-[14px] hover:text-orange-500 transition-colors"  href="https://www.youtube.com/@BoraproRol%C3%AA_cj">@2024 BORAPROROLÊ</Link>
                     <div className="inline-block text-xs text-center">
-                        <span className="block md:inline">Designed by <Link className="underline hover:text-orange-500" href="https://anna-bigaran-portfolio.webflow.io/" target="_blank">Anna Bigaran</Link></span> <span className="hidden md:inline"> | </span>
-                        <span className="block md:inline">Developed by <Link className="underline hover:text-orange-500" href="https://caroline-almeida-dev.vercel.app/" target="_blank">Caroline Almeida</Link></span>
+                        <span className="block md:inline">Designed by <Link className="underline hover:text-orange-500 transition-colors" href="https://anna-bigaran-portfolio.webflow.io/" target="_blank">Anna Bigaran</Link></span> <span className="hidden md:inline"> | </span>
+                        <span className="block md:inline">Developed by <Link className="underline hover:text-orange-500 transition-colors" href="https://caroline-almeida-dev.vercel.app/" target="_blank">Caroline Almeida</Link></span>
                     </div>
                 </div>
             </div>
