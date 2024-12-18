@@ -8,7 +8,7 @@ const TagEmoji = React.forwardRef<
   <div
     ref={ref}
     className={twMerge(
-      "inline-flex items-center justify-center gap-2 bg-white border-2 border-black rounded-[10px] py-1 px-2",
+      "inline-flex items-center justify-center gap-2 bg-white border-2 border-black rounded-[10px] py-1 px-2 min-w-max",
       className
     )}
     {...props}
@@ -35,7 +35,7 @@ const TagTitle = React.forwardRef<
   <h4
     ref={ref}
     className={twMerge(
-      "text-2xl",
+      "text-2xl md:text-3xl",
       className
     )}
     {...props}
