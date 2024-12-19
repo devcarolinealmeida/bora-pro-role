@@ -24,7 +24,7 @@ export const PorqueNosSeguir = () => {
             className="inline-flex justify-center w-full"
             initial={{ opacity: 0, translateY: "100px" }}
             whileInView={{ opacity: 1, translateY: "0" }}>
-            <CamiEjoao className="max-w-[20rem]" />
+            <CamiEjoao className="w-[20rem]" />
           </motion.div>
           <div className="flex">
             <div className="flex flex-col">
