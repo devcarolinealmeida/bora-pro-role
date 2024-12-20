@@ -36,7 +36,7 @@ const VideosYoutube = () => {
 
   return (
     <section className="bg-black" id="videos">
-      <div className="container max-w-7xl">
+      <div className="container">
         <div className="pb-24">
           <h4 className=" text-white mb-10">Se inscreva no Canal!</h4>
           <p className="text-white">

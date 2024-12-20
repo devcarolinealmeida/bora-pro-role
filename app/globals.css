@@ -5,6 +5,9 @@
 * {
   scroll-behavior: smooth;
 }
+.container {
+  max-width: 1920px;
+}
 
 .font-asap-condens-500 {
   font-family: var(--font-asap-condens-500);
@@ -30,8 +33,9 @@ h4 {
 p, h5 {
   font-family: var(--font-asap);
 }
-p,li {
+p {
   font-size: clamp(1rem, 0.9363rem + 0.2614vw, 1.25rem);
+  line-height: 1.35rem !important;
 }
 
 section {

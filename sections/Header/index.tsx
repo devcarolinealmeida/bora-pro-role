@@ -26,7 +26,7 @@ const Header = () => {
       </div>
       <nav>
         <div className="_nav-dsk bg-[#B1ABF4] hidden md:block">
-          <div className="flex justify-between items-center container max-w-7xl">
+          <div className="flex justify-between items-center container">
             <Link href="#top">
               <h1 className="text-[1.5rem] font-asap-condens-900">
                 Bora pro rolê

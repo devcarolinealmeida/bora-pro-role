@@ -8,7 +8,7 @@ import { WordsPullUp } from "../../components/words-pull-ul";
 export const Hero = () => {
   return (
     <section className="_hero pt-4 md:pt-12 pb-24 flex flex-col bg-[#B1ABF4] overflow-x-clip" id="top">
-      <div className="container max-w-7xl">
+      <div className="container">
         <div className="flex flex-col items-center relative">
           <h2 
           className="text-center md:max-w-[24ch] mb-8"><WordsPullUp text="Vida, Viagens, Vlog"/></h2>

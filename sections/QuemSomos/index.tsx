@@ -16,7 +16,7 @@ export const QuemSomos = () => {
   return (
     <section className="bg-black relative overflow-y-clip" id="quem_somos">
       {/* <SvgBg className="absolute z-0 bottom-0" /> */}
-      <div className="container max-w-7xl relative z-10">
+      <div className="container relative z-10">
         <div>
           <div className="pb-12">
             <h4 className="text-white mb-10">Quem somos</h4>
