@@ -54,7 +54,7 @@ const Header = () => {
           </Link>
           <button
             onClick={handleClick}
-            className={`w-10 h-10 flex flex-col justify-center items-center z-20 rounded-full transition-colors duration-100 ease-in ${
+            className={`w-10 h-10 flex flex-col justify-center items-center z-20 rounded-full transition-colors duration-200 ease-in ${
               open ? "bg-white fixed top-12 right-4" : "bg-black"
             }`}>
             <div className="flex flex-col items-end">
@@ -77,7 +77,35 @@ const Header = () => {
           </button>
         </div>
       </nav>
-      {open && (
+      <div className={`_menu-mob w-full h-dvh bg-black fixed top-0 left-0 transition-all ease-in-out duration-300 ${open ? 'translate-x-0' : 'translate-x-full'}`}>
+          <div className="flex flex-col justify-center h-full gap-6 text-white font-asap-condens-900 text-[40px] uppercase p-8">
+            {navItems.map((navItem) => {
+              return (
+                <Link
+                  onClick={handleClick}
+                  key={navItem.title}
+                  href={navItem.url}>
+                  {navItem.title}
+                </Link>
+              );
+            })}
+            <div className="flex items-center gap-12 mt-16">
+              <Link
+                onClick={handleClick}
+                href="https://www.instagram.com/boraprorolecj/"
+                target="_blank">
+                <InstagramIcon fill className="w-10 h-12" />
+              </Link>
+              <Link
+                onClick={handleClick}
+                href="https://www.youtube.com/@BoraproRol%C3%AA_cj"
+                target="_blank">
+                <YoutubeIcon className="w-10 h-12" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      {/* {open && (
         <div className="_menu-mob w-full h-dvh bg-black fixed top-0 left-0">
           <div className="flex flex-col justify-center h-full gap-6 text-white font-asap-condens-900 text-[40px] uppercase p-8">
             {navItems.map((navItem) => {
@@ -106,7 +134,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </header>
   );
 };

@@ -26,7 +26,7 @@ export function WordsPullUp({
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-wrap justify-center">
       {splittedText.map((current, i) => (
         <motion.div
           key={i}
