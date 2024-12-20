@@ -16,71 +16,70 @@ export const SliderText = ({ ...props }) => {
           ease: "linear",
           repeatType: "loop",
         }}>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-        <div className="flex items-center gap-1">
-          <StarIcon className="w-4 h-4 inline-flex justify-center items-center" />
+        <div className="flex items-center gap-3">
+          <StarIcon className="w-5 h-4 inline-flex justify-center items-center" />
           <span className="">{props.title}</span>
         </div>
-
       </motion.div>
     </div>
   );
