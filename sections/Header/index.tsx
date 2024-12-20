@@ -46,7 +46,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="_nav-mob bg-[#B1ABF4] flex md:hidden justify-between items-center p-4">
+        <div className="_nav-mob bg-[#B1ABF4] flex md:hidden justify-between items-center p-4 min-h-[4.5rem]">
           <Link href="#top">
             <h1 className="text-[1.375rem] font-asap-condens-900">
               Bora pro rolê
