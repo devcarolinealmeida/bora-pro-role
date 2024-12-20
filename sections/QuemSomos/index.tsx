@@ -20,7 +20,7 @@ export const QuemSomos = () => {
         <div>
           <div className="pb-12">
             <h4 className="text-white mb-10">Quem somos</h4>
-            <p className="text-white md:max-w-[76ch] mb-8">
+            <p className="text-white md:max-w-[56ch] mb-8">
               Somos Camila e João, um casal que vive em Turim, na Itália. Aqui
               mostramos nossas vidas de estudante, viagens, pedais, fatos e
               curiosidades que encontramos na Itália e, futuramente, pelo mundo

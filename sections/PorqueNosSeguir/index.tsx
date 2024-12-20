@@ -10,7 +10,7 @@ export const PorqueNosSeguir = () => {
       <div className="container min-h-svh">
         <div className="">
           <h4 className="mb-4">Porque nos seguir</h4>
-          <p className="mb-8 md:max-w-[76ch]">
+          <p className="mb-8 md:max-w-[56ch]">
             Te mostramos como é a vida de verdade na Europa, com seus altos e
             baixos, do ponto de vista de dois estudantes que, literalmente,
             tiveram que aprender do zero como é viver no exterior. Tá achando
