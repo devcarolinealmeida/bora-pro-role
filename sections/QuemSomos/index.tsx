@@ -11,15 +11,16 @@ import CamiSvg from "../../public/camila.svg";
 import JoaoSvg from "../../public/joao.svg";
 import SvgBg from "../../public/svg-sfondo-purple.svg";
 import StarIcon from "../../public/Icon-star-black.svg";
+import { WordsPullUp } from "../../components/words-pull-ul";
 
 export const QuemSomos = () => {
   return (
     <section className="bg-black relative overflow-y-clip" id="quem_somos">
-      {/* <SvgBg className="absolute z-0 bottom-0" /> */}
+      <SvgBg className="absolute z-0 bottom-0" />
       <div className="container relative z-10">
         <div>
           <div className="pb-12">
-            <h4 className="text-white mb-10">Quem somos</h4>
+            <h4 className="text-white mb-10"><WordsPullUp text="Quem somos"/></h4>
             <p className="text-white md:max-w-[56ch] mb-8">
               Somos Camila e João, um casal que vive em Turim, na Itália. Aqui
               mostramos nossas vidas de estudante, viagens, pedais, fatos e

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import imgChannel from "./../../public/bora_pro_role-joao-e-cami-3.jpg";
+import { WordsPullUp } from "../../components/words-pull-ul";
 
 import { env } from "../../env";
 
@@ -38,7 +39,7 @@ const VideosYoutube = () => {
     <section className="bg-black" id="videos">
       <div className="container">
         <div className="pb-24">
-          <h4 className=" text-white mb-10">Se inscreva no Canal!</h4>
+          <h4 className=" text-white mb-10"><WordsPullUp text="Se inscreva no Canal!"/></h4>
           <p className="text-white max-w-[56ch]">
             Bateu a curiosidade? Dá uma olhadinha nos nossos vídeos, e não
             esquece de se inscrever no canal.

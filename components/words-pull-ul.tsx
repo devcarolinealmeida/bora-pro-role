@@ -1,18 +1,17 @@
-"use client"
+"use client";
 import { cn } from "../lib/utils";
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
- 
 export function WordsPullUp({
   text,
-  className = '',
+  className = "",
 }: {
   text: string;
   className?: string;
 }) {
-  const splittedText = text.split(' ');
- 
+  const splittedText = text.split(" ");
+
   const pullupVariant = {
     initial: { y: 20, opacity: 0 },
     animate: (i: number) => ({
@@ -26,22 +25,21 @@ export function WordsPullUp({
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap">
       {splittedText.map((current, i) => (
         <motion.div
           key={i}
           ref={ref}
           variants={pullupVariant}
           initial="initial"
-          animate={isInView ? 'animate' : ''}
+          whileInView={isInView ? "animate" : ""}
           custom={i}
           className={cn(
-            '',
-            'pr-2', // class to sperate words
+            "",
+            "pr-2", // class to sperate words
             className
-          )}
-        >
-          {current == '' ? <span>&nbsp;</span> : current}
+          )}>
+          {current == "" ? <span>&nbsp;</span> : current}
         </motion.div>
       ))}
     </div>

@@ -3,13 +3,14 @@ import { SliderSuperCheap } from "../../components/SliderSuperCheap";
 import { TagEmoji, TagTitle, Emoji } from "../../components/TagEmoji";
 import CamiEjoao from "../../public/bora_pro_role-joao-e-cami-8.svg";
 import { motion } from "framer-motion";
+import { WordsPullUp } from "../../components/words-pull-ul";
 
 export const PorqueNosSeguir = () => {
   return (
     <section className="bg-[#FCE688] overflow-clip pb-0" id="porque_seguir">
       <div className="container min-h-svh">
         <div className="">
-          <h4 className="mb-4">Porque nos seguir</h4>
+          <h4 className="mb-4"><WordsPullUp text="Porque nos seguir"/></h4>
           <p className="mb-8 md:max-w-[56ch]">
             Te mostramos como é a vida de verdade na Europa, com seus altos e
             baixos, do ponto de vista de dois estudantes que, literalmente,

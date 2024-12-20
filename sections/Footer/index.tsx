@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { WordsPullUp } from "../../components/words-pull-ul";
 
 export  const Footer = () => {
     return (
