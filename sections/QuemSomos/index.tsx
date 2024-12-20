@@ -10,6 +10,7 @@ import {
 import CamiSvg from "../../public/camila.svg";
 import JoaoSvg from "../../public/joao.svg";
 import SvgBg from "../../public/svg-sfondo-purple.svg";
+import StarIcon from "../../public/Icon-star-black.svg";
 
 export const QuemSomos = () => {
   return (
@@ -29,16 +30,16 @@ export const QuemSomos = () => {
           <div className="flex flex-col gap-4">
             <CardQuemSomos className="">
               <div className="flex-1">
-                <CardTopTitle>Bio</CardTopTitle>
+                {/* <CardTopTitle>Bio</CardTopTitle> */}
                 <CardTitle>Camila "Cami"</CardTitle>
                 <CardDescription>
                   Moro na Itália há 4 anos, e estou sempre à procura de algo
                   novo que eu goste de fazer, estudar ou praticar.
                 </CardDescription>
                 <CardContent>
-                  <CardLi>Carismática</CardLi>
-                  <CardLi>Extrovertida </CardLi>
-                  <CardLi>Paciente</CardLi>
+                  <CardLi><StarIcon className="w-5 h-5"/>Carismática</CardLi>
+                  <CardLi><StarIcon className="w-5 h-5"/>Extrovertida </CardLi>
+                  <CardLi><StarIcon className="w-5 h-5"/>Paciente</CardLi>
                 </CardContent>
               </div>
               <CardImg>
@@ -47,7 +48,7 @@ export const QuemSomos = () => {
             </CardQuemSomos>
             <CardQuemSomos className="md:self-end">
               <div className="flex-1">
-                <CardTopTitle>Bio</CardTopTitle>
+                {/* <CardTopTitle>Bio</CardTopTitle> */}
                 <CardTitle>João</CardTitle>
                 <CardDescription>
                   Estou na Itália há dois anos, meu rolê é explorar, me
@@ -55,9 +56,9 @@ export const QuemSomos = () => {
                   sinônimo de diversão
                 </CardDescription>
                 <CardContent>
-                  <CardLi>Audaz</CardLi>
-                  <CardLi>Persistente</CardLi>
-                  <CardLi>Paciente</CardLi>
+                  <CardLi><StarIcon className="w-5 h-5"/>Audaz</CardLi>
+                  <CardLi> <StarIcon className="w-5 h-5"/>Persistente</CardLi>
+                  <CardLi><StarIcon className="w-5 h-5"/>Paciente</CardLi>
                 </CardContent>
               </div>
               <CardImg>

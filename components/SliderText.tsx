@@ -1,5 +1,5 @@
 "use client";
-import StarIcon from "../assets/Icon-star.svg";
+import StarIcon from "../public/Icon-star.svg";
 import { motion } from "framer-motion";
 
 export const SliderText = ({ ...props }) => {

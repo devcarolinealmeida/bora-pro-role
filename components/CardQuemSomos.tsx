@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { twMerge } from "tailwind-merge";
 
+
 const CardQuemSomos = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -59,15 +60,15 @@ const CardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div ref={ref} className={twMerge("pl-6", className)} {...props} />
+  <div ref={ref} className={twMerge("flex flex-col gap-2", className)} {...props} />
 ))
 CardContent.displayName = "CardContent"
 
 const CardLi = React.forwardRef<
-  HTMLLIElement,
-  React.HTMLAttributes<HTMLLIElement>
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <li ref={ref} className={twMerge("font-asap-condens-700", className)} {...props} />
+  <div ref={ref} className={twMerge("font-asap-condens-700 inline-flex items-center gap-2", className)} {...props}  />
 ))
 CardLi.displayName = "CardLi"
 
