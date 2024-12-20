@@ -9,7 +9,7 @@ export const PorqueNosSeguir = () => {
     <section className="bg-[#FCE688] overflow-clip pb-0" id="porque_seguir">
       <div className="container max-w-7xl min-h-svh">
         <div className="">
-          <h4 className="mb-4">Porque nos seguir</h4>
+          <h4 className="mb-10">Porque nos seguir</h4>
           <p className="mb-8 md:max-w-[76ch]">
             Te mostramos como é a vida de verdade na Europa, com seus altos e
             baixos, do ponto de vista de dois estudantes que, literalmente,

@@ -38,7 +38,7 @@ const VideosYoutube = () => {
     <section className="bg-black" id="videos">
       <div className="container max-w-7xl">
         <div className="pb-24">
-          <h4 className=" text-white mb-4">Se inscreva no Canal!</h4>
+          <h4 className=" text-white mb-10">Se inscreva no Canal!</h4>
           <p className="text-white">
             Bateu a curiosidade? Dá uma olhadinha nos nossos vídeos, e não
             esquece de se inscrever no canal.
