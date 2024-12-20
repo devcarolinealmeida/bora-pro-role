@@ -3,6 +3,7 @@ import Link from "next/link";
 import SliderCardHero from "../../components/SliderCardHero";
 import TagHello from '../../public/We_are_Cami_e_Joao.svg';
 import { motion } from "framer-motion";
+import { WordsPullUp } from "../../components/words-pull-ul";
 
 export const Hero = () => {
   return (
@@ -10,7 +11,7 @@ export const Hero = () => {
       <div className="container max-w-7xl">
         <div className="flex flex-col items-center relative">
           <h2 
-          className="text-center md:max-w-[24ch] mb-8">Vida, Viagens, Vlog</h2>
+          className="text-center md:max-w-[24ch] mb-8"><WordsPullUp text="Vida, Viagens, Vlog"/></h2>
           <motion.div
           initial={{
             transform: 'rotateZ(-35deg)',
