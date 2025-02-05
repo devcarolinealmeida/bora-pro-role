@@ -86,19 +86,22 @@ const Header = () => {
                 <Link
                   onClick={handleClick}
                   key={navItem.title}
-                  href={navItem.url}>
+                  href={navItem.url}
+                  aria-label={`clique para ir para a página ${navItem.title}`}>
                   {navItem.title}
                 </Link>
               );
             })}
             <div className="flex items-center gap-12 mt-16">
               <Link
+                aria-label="clique para ir para o instagram"
                 onClick={handleClick}
                 href="https://www.instagram.com/boraprorolecj/"
                 target="_blank">
                 <InstagramIcon fill className="w-10 h-12" />
               </Link>
               <Link
+                aria-label="clique para ir para o canal do youtube"
                 onClick={handleClick}
                 href="https://www.youtube.com/@BoraproRol%C3%AA_cj"
                 target="_blank">
