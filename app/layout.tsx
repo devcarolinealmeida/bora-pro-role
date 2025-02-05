@@ -28,13 +28,16 @@ const asap_conds_500 = Asap_Condensed({
 
 export const metadata: Metadata = {
   title: "Bora pro rolê",
-  description: "Somos Camila e João, um casal de namorados que vive em Turim, na Itália. Aqui mostramos nossas vidas de estudante, viagens, pedais, fatos e curiosidades que encontramos na Itália e, futuramente, pelo mundo todo. E aí, bora pro rolê?",
+  description:
+    "Somos Camila e João, um casal de namorados que vive em Turim, na Itália. Aqui mostramos nossas vidas de estudante, viagens, pedais, fatos e curiosidades que encontramos na Itália e, futuramente, pelo mundo todo. E aí, bora pro rolê?",
   openGraph: {
-    title: 'Bora pro rolê',
-    description: "Somos Camila e João, um casal de namorados que vive em Turim, na Itália. Aqui mostramos nossas vidas de estudante, viagens, pedais, fatos e curiosidades que encontramos na Itália e, futuramente, pelo mundo todo. E aí, bora pro rolê?",
-    images: ['https://bora-pro-role.vercel.app/_next/image?url=%2Fbora_pro_role-joao-e-cami-3.jpg&w=3840&q=75'],
-
-  }
+    title: "Bora pro rolê",
+    description:
+      "Somos Camila e João, um casal de namorados que vive em Turim, na Itália. Aqui mostramos nossas vidas de estudante, viagens, pedais, fatos e curiosidades que encontramos na Itália e, futuramente, pelo mundo todo. E aí, bora pro rolê?",
+    images: [
+      "https://bora-pro-role.vercel.app/_next/image?url=%2Fbora_pro_role-joao-e-cami-3.jpg&w=3840&q=75",
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -44,6 +47,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt" className="relative">
+      <meta
+        name="google-site-verification"
+        content="JGPqT0IyZV23SWK9-spZPQSI0Nh6v8v1IspAWfsA4L8"
+      />
       <body
         className={twMerge(
           asap.variable,
