@@ -27,7 +27,7 @@ const Header = () => {
       <nav>
         <div className="_nav-dsk bg-[#B1ABF4] hidden md:block">
           <div className="flex justify-between items-center container">
-            <Link href="#top">
+            <Link href="#top" aria-label="clique para voltar ao topo">
               <h1 className="text-[1.5rem] font-asap-condens-900">
                 Bora pro rolê
               </h1>
@@ -38,7 +38,9 @@ const Header = () => {
                   <Link
                     className="px-4 py-6 hover:text-white transition-colors"
                     key={navItem.title}
-                    href={navItem.url}>
+                    href={navItem.url} 
+                    aria-label={`clique para ir para ${navItem.title}`}
+                    aria-hidden="false">
                     {navItem.title}
                   </Link>
                 );
