@@ -23,7 +23,7 @@ const VideosYoutube = () => {
             `${BASE_URL}?part=snippet%2CcontentDetails&playlistId=${playlistID}&maxResults=3&key=${apiKey}`
           );
           const videos = await response.json();
-          console.log(videos);
+          /* console.log(videos); */
           setData(videos);
           setLoading(false);
         }, 1000);
