@@ -38,7 +38,7 @@ export const QuemSomos = () => {
     <section ref={container}
       className="bg-black relative overflow-y-clip"
       id="quem_somos">
-      <div  className="absolute top-[70vh] md:top-[25vh] left-0 w-full">
+      <div  className="absolute top-[50%] md:top-[25vh] left-0 w-full">
         {
           <svg viewBox="0 0 1920 935" fill="none">
             <motion.path
