@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Bora pro rolê',
     description: "Somos Camila e João, um casal de namorados que vive em Turim, na Itália. Aqui mostramos nossas vidas de estudante, viagens, pedais, fatos e curiosidades que encontramos na Itália e, futuramente, pelo mundo todo. E aí, bora pro rolê?",
-    images: ['']
+    images: ['https://bora-pro-role.vercel.app/_next/image?url=%2Fbora_pro_role-joao-e-cami-3.jpg&w=3840&q=75'],
 
   }
 };
