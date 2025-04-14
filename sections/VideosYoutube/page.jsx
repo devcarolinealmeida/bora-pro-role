@@ -4,34 +4,28 @@ import Link from "next/link";
 import Image from "next/image";
 import imgChannel from "./../../public/bora_pro_role-joao-e-cami-3.jpg";
 import { WordsPullUp } from "../../components/words-pull-ul";
+import { getVideos } from "./get_videos";
 
-import { env } from "../../env";
-
-const BASE_URL = env.NEXT_PUBLIC_DATABASE_URL;
-/* const channelID = env.NEXT_PUBLIC_CHANNEL_ID; */
-const apiKey = env.NEXT_PUBLIC_API_KEY;
-const playlistID = env.NEXT_PUBLIC_PLAYLIST_ID;
 
 const VideosYoutube = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        setTimeout(async () => {
-          const response = await fetch(
-            `${BASE_URL}?part=snippet%2CcontentDetails&playlistId=${playlistID}&maxResults=3&key=${apiKey}`
-          );
-          const videos = await response.json();
-          /* console.log(videos); */
-          setData(videos);
-          setLoading(false);
-        }, 1000);
-      } catch (error) {
-        console.error("error fetching data:", error);
+      setTimeout(async () => {
+        const data = await getVideos();
+        setData(data);
+        console.log(data);
         setLoading(false);
+      }, 100);
+      } catch (error) {
+      console.error("Error fetching videos:", error);
+      setLoading(false);
       }
     };
+
     fetchVideos();
   }, []);
 
@@ -50,7 +44,7 @@ const VideosYoutube = () => {
         ) : (
           <div>
             <ul className="flex flex-col md:flex-row gap-y-14 gap-x-6">
-              {data.items.map((video) => (
+              {data.items?.map((video) => (
                 <li
                   key={video.videoId}
                   className="hover:-translate-y-2 transition-transform ease-in-out">
